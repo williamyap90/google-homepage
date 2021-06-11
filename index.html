@@ -7,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
-        <header id="header">
-            <a href="#" class="header_left" id="about">About</a>
-            <a href="#" class="header_left" id="store">Store</a>
-            <a href="#" class="header_right" id="gmail">Gmail</a>
-            <a href="#" class="header_right" id="apps-menu">[apps icon]</a>
-            <a href="#" class="header_right" id="account">[profile img]</a>
+        <header class="header">
+            <div class="header_left-container">
+                <a href="#" class="header_left" id="about">About</a>
+                <a href="#" class="header_left" id="store">Store</a>
+            </div>
+            <div class="header_right-container">
+                <a href="#" class="header_right" id="gmail">Gmail</a>
+                <a href="#" class="header_right" id="images">Images</a>
+                <a href="#" class="header_right" id="apps-icon"><span class="material-icons-outlined">apps</span></a>
+                <a href="#" class="header_right" id="account">[profile img]</a>
+            </div>
         </header>
 
         <div class="logo">
@@ -25,12 +31,14 @@
         </div>
 
         <section class="main">
-            <input type="text" class="search-box"></input>
-            <button type="button" class="search-button">Google Search</button>
-            <button type="button" class="lucky-button">I'm Feeling Lucky</button>
+            <div class="main-container">
+                <input type="text" class="search-box"></input>
+                <button type="button" class="search-button">Google Search</button>
+                <button type="button" class="lucky-button">I'm Feeling Lucky</button>
+            </div>
         </section>
 
-        <footer id="footer">
+        <footer class="footer">
             <div class="country">United Kingdom</div>
             <hr>
 
@@ -39,13 +47,14 @@
                 <div class="carbon-neutral-text">Carbon neutral since 2007</div>
             </div>
 
-            <a href="#" class="footer_left">Advertising</a>
-            <a href="#" class="footer_left">Business</a>
-            <a href="#" class="footer_left">How Search works</a>
-            <a href="#" class="footer_right">Privacy</a>
-            <a href="#" class="footer_right">Terms</a>
-            <a href="#" class="footer_right">Settings</a>
-
+            <div class="footer_links">
+                <a href="#" class="footer_left">Advertising</a>
+                <a href="#" class="footer_left">Business</a>
+                <a href="#" class="footer_left">How Search works</a>
+                <a href="#" class="footer_right">Privacy</a>
+                <a href="#" class="footer_right">Terms</a>
+                <a href="#" class="footer_right">Settings</a>
+            </div>
         </footer>
     </div>
 </body>

@@ -9,55 +9,106 @@
     font-size: 14px;
 }
 
+html, body { height: 100%; }
+
+body {
+    margin:0;
+}
+/* Wrapper for whole page*/
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-#header {
+/* Header section */
+.header {
     padding: 6px;
     height: 60px;
-    border: 1px solid red;
     display: flex;
     align-items: center;
 }
-#header a {
+.header a {
     text-decoration: none;
     color: rgb(34, 34, 34);
 }
-#header a:hover {
+.header a:hover {
     text-decoration: underline;
 }
 
+.header_left-container {
+    flex: 1;
+    text-align: left;
+}
+.header_right-container {
+    flex: 2;
+    text-align: right;
+    align-items: center;
+}
 .header_left {
-    flex: 20%;
+    padding: 10px;
+    vertical-align: middle;
 }
 .header_right {
-    flex: 20%;
+    font-size: 13px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+#apps-icon:hover {
+    opacity: 60%;
+}
+
+/* Google apps - material icon */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons-outlined{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: middle;
 }
 
 .logo {
     align-self: center;
     padding: 40px;
+    margin-top: 5em;
 }
 
+/* Search box section */
 
+.main {
+    flex: 1;
+}
 
 /* Footer section */
-#footer {
-    grid-area: footer;
+.footer {
     background-color: rgb(242, 242, 242);
-    /* display: grid;
-    grid-template-areas: 
-        "country . ."
-        "hr hr hr"
-        ". carbon ."
-        "footer1 . footer2";
-    grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.footer_links {
+    display: flex;
 }
 
 hr {
-    grid-area: hr;
     /* transform: rotate(90deg); */
     width: 100%;
     border-top: 1px solid rgb(218, 220, 224);
@@ -88,11 +139,3 @@ hr {
 .carbon-neutral-text {
     text-align: center;
 }
-
-/* .footer_left {
-
-}
-
-.footer_right {
-
-} */
