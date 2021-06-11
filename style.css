@@ -6,4 +6,84 @@
 
 :root {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "main"
+    "."
+    "footer";
+    grid-template-rows: 0.5fr 2fr 2fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.main {
+    grid-area: main;
+}
+
+/* Footer section */
+footer {
+    grid-area: footer;
+    background-color: rgb(242, 242, 242);
+    display: grid;
+    grid-template-areas: 
+        "country . ."
+        "hr hr hr"
+        ". carbon ."
+        "footer1 . footer2";
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+}
+
+hr {
+    grid-area: hr;
+    /* transform: rotate(90deg); */
+    width: 100%;
+    border-top: 1px solid rgb(218, 220, 224);
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.country {
+    padding: 10px 25px;
+    margin-top: 0.6em;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.carbon-neutral {
+    grid-area: carbon;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.54);
+    display: flex;
+    padding: 15px;
+}
+.carbon-neutral-logo {
+    content: url(/images/cn-logo.png);
+    align-self: bottom;
+    margin-right: 0.3em;
+    width: 14px;
+    height: 14px;
+}
+.carbon-neutral-text {
+    text-align: center;
+}
+
+.footer_left {
+    grid-area: footer1;
+}
+
+.footer_right {
+    grid-area: footer2;
 }
