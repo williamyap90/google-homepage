@@ -59,6 +59,18 @@ body {
     opacity: 60%;
 }
 
+.account-icon {
+    content: url(/images/me.jpg);
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.account-icon:hover {
+    box-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+
 /* Google apps - material icon */
 @font-face {
     font-family: 'Material Icons';
@@ -141,6 +153,8 @@ button:hover {
     border: 1px solid #dadce0;
     color: #202124;
 }
+
+
 /* Footer section */
 .footer {
     background-color: rgb(242, 242, 242);
@@ -164,7 +178,7 @@ button:hover {
 .carbon-neutral-logo {
     content: url(/images/cn-logo.png);
     align-self: bottom;
-    margin-right: 0.3em;
+    margin-right: 0.4em;
     width: 14px;
     height: 14px;
 }
@@ -176,26 +190,25 @@ button:hover {
     display: flex;
     height: 35px;
 }
-
 .footer_left-container {
     flex: 1;
     padding: 10px;
     align-items: center;
-    border: 1px solid blue;
+    margin-left: 6em;
 }
 .footer_right-container {
     flex: 1;
     padding: 10px;    
     align-items: center;
-    border: 1px solid red;
+    text-align: right;
+    margin-right: 6em;
 }
 
 .footer_left {
-    text-align: left;
-
+    padding: 15px;
 }
 .footer_right {
-    text-align: right;
+    padding: 15px;
 }
 
 .footer a {
