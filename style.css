@@ -144,25 +144,15 @@ button:hover {
 /* Footer section */
 .footer {
     background-color: rgb(242, 242, 242);
-}
-
-.footer_links {
     display: flex;
-}
-
-hr {
-    /* transform: rotate(90deg); */
-    width: 100%;
-    border-top: 1px solid rgb(218, 220, 224);
-    border-bottom: transparent;
-    border-left: transparent;
-    border-right: transparent;
+    flex-direction: column;
+    padding: 6px;
 }
 
 .country {
-    padding: 10px 25px;
-    margin-top: 0.6em;
+    padding: 15px 30px;
     color: rgba(0, 0, 0, 0.54);
+    border-bottom: 1px solid rgb(218, 220, 224);
 }
 
 .carbon-neutral {
@@ -180,4 +170,35 @@ hr {
 }
 .carbon-neutral-text {
     text-align: center;
+}
+
+.footer_links {
+    display: flex;
+    height: 35px;
+}
+
+.footer_left-container {
+    flex: 1;
+    padding: 10px;
+}
+.right-container {
+    flex: 2;
+    padding: 10px;    
+}
+
+.footer_left {
+    text-align: left;
+
+}
+.footer_right {
+    text-align: right;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(112, 117, 122)
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: #70757a;
 }
