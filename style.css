@@ -180,10 +180,14 @@ button:hover {
 .footer_left-container {
     flex: 1;
     padding: 10px;
+    align-items: center;
+    border: 1px solid blue;
 }
-.right-container {
-    flex: 2;
+.footer_right-container {
+    flex: 1;
     padding: 10px;    
+    align-items: center;
+    border: 1px solid red;
 }
 
 .footer_left {
