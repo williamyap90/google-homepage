@@ -60,7 +60,7 @@ body {
 }
 
 .account-icon {
-    content: url(https://github.com/williamyap90/google-homepage/blob/main/images/me.jpg);
+    content: url(/images/me.jpg);
     width: 32px;
     height: 32px;
     vertical-align: middle;
@@ -102,7 +102,7 @@ body {
 .logo {
     align-self: center;
     padding: 30px;
-    margin-top: 10em;
+    margin-top: 12em;
 }
 
 /* Search box section */
@@ -123,15 +123,24 @@ body {
     padding: 5px;
     max-height: 160px;
     max-width: 584px;
-    border: 1px solid red;
+    border-radius: 25px;
+    padding-right: 35px;
+    padding-left: 15px;
+    border: 1px solid #b3bbc4;
 }
+.search-box-container:hover {
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px
+}
+
 .search-icon {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 5px;
 }
 .search-box {
+    font-size: 14px;
     height: 34px; 
-    width: 400px;
-    /* border: none; */
+    width: 450px;
+    border: none;
     outline: none;
     background-color: transparent;
     word-wrap: break-word;
@@ -155,7 +164,7 @@ button {
     padding: 10px;
     margin-left: 4px;
     margin-right: 4px;
-    margin-top: 11px
+    margin-top: 30px;
 }
 
 button:hover {
@@ -187,7 +196,7 @@ button:hover {
     padding: 15px;
 }
 .carbon-neutral-logo {
-    content: url(https://github.com/williamyap90/google-homepage/blob/main/images/cn-logo.png);
+    content: url(/images/cn-logo.png);
     align-self: bottom;
     margin-right: 0.4em;
     width: 14px;
