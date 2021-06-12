@@ -60,7 +60,7 @@ body {
 }
 
 .account-icon {
-    content: url(/images/me.jpg);
+    content: url(images/me.jpg);
     width: 32px;
     height: 32px;
     vertical-align: middle;
@@ -196,7 +196,7 @@ button:hover {
     padding: 15px;
 }
 .carbon-neutral-logo {
-    content: url(/images/cn-logo.png);
+    content: url(images/cn-logo.png);
     align-self: bottom;
     margin-right: 0.4em;
     width: 14px;
